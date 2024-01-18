@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:my_portfolio/data/dev_data.dart';
 import 'package:my_portfolio/utils/app_colors.dart';
 import 'package:my_portfolio/utils/app_strings.dart';
+import 'package:my_portfolio/widgets/skills_box.dart';
 
 class MainView extends StatefulWidget {
   const MainView({super.key});
@@ -60,39 +61,19 @@ class _MainViewState extends State<MainView> {
             ),
 
             Wrap(
+                crossAxisAlignment: WrapCrossAlignment.center,
+                alignment: WrapAlignment.center,
+                spacing: size.width * .01,
+                runSpacing: size.height * .01,
                 children: List.generate(
-              DevData.devData.skillsAndProgress.length,
-              (index) => SkillsBox(
-                title: DevData.devData.skillsAndProgress[index].name,
-              ),
-            ))
+                  DevData.devData.skillsAndProgress.length,
+                  (index) => SkillsBox(
+                    title: DevData.devData.skillsAndProgress[index].name,
+                  ),
+                ))
           ],
         ),
       ),
     );
-  }
-}
-
-class SkillsBox extends StatelessWidget {
-  const SkillsBox({
-    super.key,
-    required this.title,
-  });
-
-  final String title;
-
-  @override
-  Widget build(BuildContext context) {
-    ThemeData theme = Theme.of(context);
-    return Container(
-        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(30),
-          color: AppColors.appPrimaryColor,
-        ),
-        child: Text(
-          title,
-          style: theme.textTheme.displayMedium,
-        ));
   }
 }
