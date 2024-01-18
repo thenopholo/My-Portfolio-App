@@ -20,7 +20,7 @@ class DevModels {
 /// Skills and progress class
 class SkillsAndProgress {
   final String name;
-  final String progress;
+  final double progress;
 
   SkillsAndProgress({
     required this.name,
