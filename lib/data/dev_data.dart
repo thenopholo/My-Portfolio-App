@@ -8,7 +8,8 @@ class DevData {
     name: 'Rodrigo Thenopholo',
     number: '(11) 94312-0992',
     email: 'thenopholo92@gmail.com',
-    bio: 'DevBio',
+    bio:
+        'Hey! 👋 Sou Rodrigo, designer sênior apaixonado por desenvolvimento de software. Sou especialista na criação de aplicativos web e mobile com foco na experiência do usuário e na estética das interfaces. 🎨💻 Conecte-se comigo no GitHub e Reddit para ver meus projetos mais recentes e participar da conversa. Vamos criar algo incrível juntos! ✨🚀',
     hobbies: <String>[
       "Codar em Dart",
       "Treinar na academia",

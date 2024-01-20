@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/view/first_view.dart';
+import 'package:my_portfolio/view/second_view.dart';
 
 class MainView extends StatefulWidget {
   const MainView({super.key});
@@ -40,7 +41,7 @@ class _MainViewState extends State<MainView> {
           scrollDirection: Axis.horizontal,
           children: [
             const FirstView(),
-            Container(color: Colors.black),
+            SecondView(),
           ],
         ),
       ),

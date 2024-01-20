@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:my_portfolio/data/dev_data.dart';
 import 'package:my_portfolio/utils/app_colors.dart';
 import 'package:my_portfolio/utils/app_strings.dart';
-import 'package:my_portfolio/utils/app_theme.dart';
 import 'package:my_portfolio/widgets/skills_box.dart';
 import 'package:my_portfolio/widgets/skills_progress_bar.dart';
+import 'package:my_portfolio/utils/app_theme.dart';
 
 /// Fist item of the main view
 class FirstView extends StatelessWidget {
