@@ -17,11 +17,11 @@ class DevData {
     skillsAndProgress: <SkillsAndProgress>[
       SkillsAndProgress(
         name: 'Engenharia de Software',
-        progress: 0.7,
+        progress: 0.5,
       ),
       SkillsAndProgress(
         name: 'Desenvolvimento em Flutter',
-        progress: 1,
+        progress: 0.6,
       ),
       SkillsAndProgress(
         name: 'Desing Gráfico',
@@ -33,11 +33,11 @@ class DevData {
       ),
       SkillsAndProgress(
         name: 'Desenvolvimento Web',
-        progress: 0.9,
+        progress: 0.8,
       ),
       SkillsAndProgress(
         name: 'Desenvolvimento Mobile',
-        progress: 0.8,
+        progress: 0.7,
       ),
     ],
   );

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:my_portfolio/utils/app_colors.dart';
 
-
 /// App Color Theme
 class AppTheme {
   AppTheme._();
@@ -13,27 +12,27 @@ class AppTheme {
     canvasColor: Colors.black,
     cardColor: AppColors.appLightColor,
     textTheme: TextTheme(
-      displayLarge: GoogleFonts.aBeeZee(
+      displayLarge: GoogleFonts.poppins(
         fontSize: 35,
         fontWeight: FontWeight.bold,
         color: Colors.black,
       ),
-      displayMedium: GoogleFonts.aBeeZee(
+      displayMedium: GoogleFonts.poppins(
         fontSize: 18,
         fontWeight: FontWeight.bold,
         color: Colors.white,
       ),
-      displaySmall: GoogleFonts.aBeeZee(
+      displaySmall: GoogleFonts.poppins(
         fontSize: 26,
         fontWeight: FontWeight.bold,
         color: Colors.black,
       ),
-      bodyLarge: GoogleFonts.aBeeZee(
+      bodyLarge: GoogleFonts.poppins(
         fontSize: 50,
         fontWeight: FontWeight.bold,
         color: Colors.black,
       ),
-      bodyMedium: GoogleFonts.aBeeZee(
+      bodyMedium: GoogleFonts.poppins(
         fontSize: 18,
         fontWeight: FontWeight.w500,
         color: Colors.grey.shade600,
@@ -43,31 +42,31 @@ class AppTheme {
 
   /// App Dark Theme
   static ThemeData darkTheme = ThemeData(
-    scaffoldBackgroundColor: Colors.white,
+    scaffoldBackgroundColor: Colors.black,
     canvasColor: Colors.white,
     cardColor: AppColors.appDarkColor,
     textTheme: TextTheme(
-      displayLarge: GoogleFonts.aBeeZee(
+      displayLarge: GoogleFonts.poppins(
         fontSize: 35,
         fontWeight: FontWeight.bold,
         color: Colors.white,
       ),
-      displayMedium: GoogleFonts.aBeeZee(
+      displayMedium: GoogleFonts.poppins(
         fontSize: 18,
         fontWeight: FontWeight.bold,
         color: Colors.white,
       ),
-      displaySmall: GoogleFonts.aBeeZee(
+      displaySmall: GoogleFonts.poppins(
         fontSize: 26,
         fontWeight: FontWeight.bold,
         color: Colors.white,
       ),
-      bodyLarge: GoogleFonts.aBeeZee(
+      bodyLarge: GoogleFonts.poppins(
         fontSize: 50,
         fontWeight: FontWeight.bold,
         color: Colors.white,
       ),
-      bodyMedium: GoogleFonts.aBeeZee(
+      bodyMedium: GoogleFonts.poppins(
         fontSize: 18,
         fontWeight: FontWeight.w500,
         color: Colors.grey.shade600,
