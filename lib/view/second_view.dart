@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/data/dev_data.dart';
+import 'package:my_portfolio/utils/app_colors.dart';
 import 'package:my_portfolio/utils/app_strings.dart';
 import 'package:my_portfolio/widgets/contact_me_box.dart';
 
 class SecondView extends StatelessWidget {
-  const SecondView({super.key});
+  const SecondView({
+    super.key,
+    required this.onNextPage,
+  });
+
+  final VoidCallback onNextPage;
 
   @override
   Widget build(BuildContext context) {
@@ -105,6 +111,20 @@ class SecondView extends StatelessWidget {
                   ContactMeBox(title: DevData.devData.email, icon: Icons.email),
                 ],
               ),
+            ),
+
+            IconButton(
+              onPressed: onNextPage,
+              icon: Icon(
+                Icons.arrow_circle_left_outlined,
+                size: 40,
+                color: AppColors.appPrimaryColor,
+              ),
+            ),
+
+            /// Empty Space
+            SizedBox(
+              height: size.height * .02,
             ),
           ],
         ),

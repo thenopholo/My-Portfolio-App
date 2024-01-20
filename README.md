@@ -1,16 +1,16 @@
-# my_portfolio
+# Meu Portfólio
 
-My Portfolio App
+Este projeto é um exemplo de estrutura básica de widgets usando Dart. O tema escolhido é um cartão "Sobre Mim", que contém informações sobre o desenvolvedor e algumas habilidades.
 
-## Getting Started
+## Funcionalidades
 
-This project is a starting point for a Flutter application.
+- Exibe informações sobre o desenvolvedor, como nome, foto e descrição.
+- Mostra uma lista de habilidades com ícones correspondentes.
+- Possui um botão no final de cada página para tornar o app mais interativo, melhorando a experiência do usuário.
 
-A few resources to get you started if this is your first Flutter project:
+## Instalação
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Clone este repositório: `git clone https://github.com/seu-usuario/meu-portfolio.git`
+2. Navegue até o diretório do projeto: `cd meu-portfolio`
+3. Instale as dependências: `flutter pub get`
+4. Execute o aplicativo: `flutter run`

@@ -12,9 +12,6 @@ class ContactMeBox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    /// For making app responsive for all screen sizes
-    Size size = MediaQuery.of(context).size;
-
     /// For accessing theme both light and dark mode
     ThemeData theme = Theme.of(context);
     return Card(

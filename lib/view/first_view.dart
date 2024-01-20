@@ -4,13 +4,15 @@ import 'package:my_portfolio/utils/app_colors.dart';
 import 'package:my_portfolio/utils/app_strings.dart';
 import 'package:my_portfolio/widgets/skills_box.dart';
 import 'package:my_portfolio/widgets/skills_progress_bar.dart';
-import 'package:my_portfolio/utils/app_theme.dart';
+
 
 /// Fist item of the main view
 class FirstView extends StatelessWidget {
   const FirstView({
-    super.key,
+    super.key, required this.onNextPage,
   });
+
+  final VoidCallback onNextPage;
 
   @override
   Widget build(BuildContext context) {
@@ -92,23 +94,14 @@ class FirstView extends StatelessWidget {
             height: size.height * .02,
           ),
 
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(
-                'Arreste para o lado para ver mais!',
-                style: TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.bold,
-                  color: AppColors.appPrimaryColor,
-                ),
-              ),
-              Icon(
-                Icons.arrow_forward_ios_rounded,
-                size: 16,
-                color: AppColors.appPrimaryColor,
-              ),
-            ],
+          
+          IconButton(
+            onPressed: onNextPage,
+            icon: Icon(
+              Icons.arrow_circle_right_outlined,
+              size: 40,
+              color: AppColors.appPrimaryColor,
+            ),
           ),
 
           /// Empty Space

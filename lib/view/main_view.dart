@@ -1,3 +1,4 @@
+import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/view/first_view.dart';
 import 'package:my_portfolio/view/second_view.dart';
@@ -18,6 +19,13 @@ class _MainViewState extends State<MainView> {
     pageController = PageController(initialPage: 0);
   }
 
+  ///Create a on Next Page Function
+  void onNextPage(int page) {
+    pageController.animateToPage(page,
+        duration: const Duration(milliseconds: 500),
+        curve: Curves.linearToEaseOut);
+  }
+
   @override
   void dispose() {
     super.dispose();
@@ -26,11 +34,8 @@ class _MainViewState extends State<MainView> {
 
   @override
   Widget build(BuildContext context) {
-    /// For making app responsive for all screen sizes
-    Size size = MediaQuery.of(context).size;
-
-    /// For accessing theme both light and dark mode
-    ThemeData theme = Theme.of(context);
+    ///For makeing reponsive on all screen
+    ui.Size size = MediaQuery.of(context).size;
 
     return Scaffold(
       body: SizedBox(
@@ -40,8 +45,12 @@ class _MainViewState extends State<MainView> {
           controller: pageController,
           scrollDirection: Axis.horizontal,
           children: [
-            const FirstView(),
-            SecondView(),
+            FirstView(
+              onNextPage: () => onNextPage(1),
+            ),
+            SecondView(
+              onNextPage: () => onNextPage(0),
+            ),
           ],
         ),
       ),
